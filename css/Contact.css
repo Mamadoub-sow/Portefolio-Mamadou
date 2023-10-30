@@ -1,0 +1,136 @@
+body{
+    background-color: #192531;
+}
+
+@media screen and (max-width: 768px) {
+    div {
+        font-size: 2rem; /* Taille de police plus petite pour les écrans plus petits */
+    }
+}
+
+.accueil{
+    border: 1px solid #192531;
+    background-color: #192531;
+    width: 100%;
+    height: 40px;
+    margin-top: -10px;
+    padding: 20px;
+    padding-left:  40px;
+    position:fixed;
+    z-index: 1; /* Ajustez le z-index pour positionner la barre "Retour à l'accueil" au premier plan */
+ }
+ /* Ajoutez des styles de base pour le lien "Retour à l'accueil" */
+ #retour-accueil {
+     text-decoration: none;
+     color: orangered;
+     font-weight: bold;
+     font-size: 1.5em;
+     position: relative;
+ }
+ 
+ /* Styles pour l'effet de transition */
+ #retour-accueil .arrow-animation {
+     display: inline-block;
+     opacity: 0;
+     padding-left: -10px;
+     transform: translateX(-10px);
+     transition: opacity 0.2s, transform 0.2s;
+ }
+ 
+ /* Styles pour l'animation de l'émoticône */
+ @keyframes bounceIn {
+     0% { opacity: 0; transform: translateX(-10px); }
+     100% { opacity: 1; transform: translateX(0); }
+ }
+ 
+ #retour-accueil:hover .arrow-animation {
+     animation: bounceIn 0.2s ease forwards;
+ }
+
+ .titre{
+    text-align: center;
+    font-size: 1.6em;
+    color: orangered;
+    padding-top: 100px;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+form {
+    border: 2px solid #001120;
+    border-radius: 20px;
+    padding: 20px;
+    width: 40%;
+    text-align: left;
+    margin-top: -100px;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+input,textarea {
+    width: 96%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #001120;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #001120;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0; /* Espacement du bouton par rapport aux champs */
+}
+
+button:hover {
+    background-color: orangered;
+}
+
+#error-message {
+    color: red;
+}
+
+footer {
+    position: fixed; /* Fixe le pied de page en bas */
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    opacity: 0;
+    transition: opacity 1s;
+    height: 100px;
+    background-color: #001120;
+    text-align: center;
+}
+
+footer p {
+    color: orangered;
+    padding-top: 30px;
+}
+
+/* Utilisez un design réactif avec des media queries */
+@media screen and (max-width: 768px) {
+    /* Styles pour les écrans de largeur maximale de 768 pixels */
+    /* Vous pouvez personnaliser ces styles en fonction de vos besoins */
+}
+
+/* Utilisez une unité de base relative (ex : rem) pour la taille de la police et les marges */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Utilisez des polices web standard */

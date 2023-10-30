@@ -1,0 +1,29 @@
+/*-----PACIFICO---------*/
+
+@font-face{
+    font-family:'Pacifico';
+    src:url('search-ms:displayname=Résultats%20de%20la%20recherche%20dans%20fonts-master&crumb=location:C%3A%5CUsers%5CPc%5CDownloads%5CLogicial%5Cfonts-master%5Cfonts-master\pacifico\Pacifico-Regular.ttf');
+    
+/*-----Righteous---------*/
+    
+    @font-face{
+    font-family:'Righteous';
+    src:url('C:\Users\Pc\Downloads\Logicial\fonts-master\fonts-master\ofl\righteous\Righteous-Regular.ttf')
+        
+/*-----Ubuntu---------*/
+    
+    @font-face{
+    font-family:'Ubuntu';
+    src:url('search-ms:displayname=Résultats%20de%20la%20recherche%20dans%20fonts-master&crumb=location:C%3A%5CUsers%5CPc%5CDownloads%5CLogicial%5Cfonts-master%5Cfonts-master\ubuntu\Ubuntu-Regular.ttf')
+        
+        /*-----Ubuntu---------*/
+    
+    @font-face{
+    font-family:'Georama';
+    src:url('search-ms:displayname=Résultats%20de%20la%20recherche%20dans%20fonts-master&crumb=location:C%3A%5CUsers%5CPc%5CDownloads%5CLogicial%5Cfonts-master%5Cfonts-master\georama\Georama[wdth,wght].ttf')
+    
+/*-----Abel---------*/
+    
+    @font-face{
+    font-family:'Abel';
+    src:url('C:\Users\Pc\Downloads\Logicial\fonts-master\fonts-master\ofl\abel\Abel-Regular.ttf')

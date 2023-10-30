@@ -1,0 +1,425 @@
+
+header
+{
+    background: url(../Images/digital-transformation-conceptual-next-generation-260nw-1614142330.webp) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 900px;
+    margin-top: -280px;
+}
+:root{
+  
+    /*--Les colors--*/
+    
+    --text-gray:#3f4954;
+    --text-light: #120ee0;
+    --bg-color:#ee0c0c;
+    --white:#ffffff;
+    --midnight:#104f55;
+    --text-lemon:#00E8E8;
+    --beauty: rgba(255,230,128,0.415);
+    
+    /*---Les Couleurs en Gradiant--*/
+    --sky:linear-gradient(120deg, #f34f03 0%, #948f44 100%);
+    /*Les themes*/
+    
+    --Abel:'Abel',cursive;
+    --Righteous:'Righteous', cursive;
+    --Pacifico:'Pacifico', cursive;
+    --Georama:'Georama', cursive;
+    --Ubuntu:'Ubuntu', cursive;
+    
+}
+/*---------Class Globales----------*/
+
+a{
+    text-decoration: none;
+    color:var(--text-gray);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ul, .sidebar ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Righteous);
+        font-size:2.5rem;
+        
+}
+
+h2
+{
+    font-family: var(--Ubuntu);
+        }
+h3
+{
+    font-family: var(--Abel);
+        font-size:1.3rem;
+}
+
+button.btn{
+    color:black;
+    border-color: white;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family:'Righteous';
+    cursor:pointer;
+}
+
+span{
+    font-family: Abel;
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color:var(--text-gray);
+}
+
+p{
+    font-family: 'Lexend';
+    color: rgba(0,0,0,0.578);
+    font-size: 1.2rem;
+}
+
+/*-------------navbar----------*/
+
+.nav{
+    background: var(--sky);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+    position: fixed;
+    z-index: 1; /* Ajustez le z-index pour positionner la barre "Retour à l'accueil" au premier plan */
+    width: 100%;
+}
+
+.nav .nav-menu{
+     
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons
+{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i
+{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse
+{
+    height: 30rem;
+}
+.nav .nav-items
+{
+    list-style-type: none;
+    display: flex;
+    margin:0;
+}
+
+.nav .nav-items .nav-link
+{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    
+    font-family: var(--Abel);
+    font-size:1.1rem;
+    
+}
+.nav .nav-items .nav-link .activ,.nav .nav-items .nav-link .activ:hover{
+   
+        background-color: var(--midnight);
+            padding: 1.6rem 1rem;
+            color:var(--white);
+        }
+
+    
+.nav .nav-brand a
+{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    color:white;
+    font-family:var(--Righteous);
+    font-size:1.6rem;
+    
+    
+}
+
+.nav .nav-items .nav-link:hover
+{
+    background-color: var(--midnight);
+        
+        
+}
+        
+.nav .nav-items .nav-link:hover a
+{
+    color:var(--white);
+}
+
+.nav .social
+{
+    padding: .8rem 1rem; 
+    margin: .5rem 0rem;
+    border-radius:3rem;
+    margin-bottom: .9rem;
+    background: var(--sky);
+    color:var(--midnight);
+    
+}
+
+.nav .social i
+{
+    padding:0.2rem;
+    
+}
+
+.nav .social i:hover
+{
+    color:#a1c4cf;
+}
+/*-------------le titre principale----------*/
+h1 {
+    font-family: var(--Righteous);
+    text-align: center; /* Centrer le texte horizontalement */
+    margin-top: 270px ; /* Cenntrer le texte par rapport à la barre de tache*/
+    padding-top: 350px;
+    margin-left: 300px;
+    font-size: 2.5rem; /* Taille de police initiale */
+    color: #f34f03b6;
+    --text-gray:#3f4954;
+    --text-light: #120ee0;
+    --bg-color:#ee0c0c;
+    --white:#ffffff;
+    --midnight:#104f55;
+    --text-lemon:#00E8E8;
+    --beauty: rgba(255,230,128,0.415);
+    
+    /*---Les Couleurs en Gradiant--*/
+    --sky:linear-gradient(120deg, #f34f03 0%, #948f44 100%);
+
+}
+
+/* Styles spécifiques pour une taille d'écran inférieure (par exemple, mobile) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Taille de police plus petite pour les écrans plus petits */
+    }
+}
+section{
+    margin-top: -20px;
+    height: 1000px;
+    background-color: #192531;
+}
+h2{
+  text-align: center;
+  color: #ec4b00;
+  padding-top: 50px;
+}
+/* Styles spécifiques pour une taille d'écran inférieure (par exemple, mobile) */
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 2rem; /* Taille de police plus petite pour les écrans plus petits */
+    }
+}
+.container {
+    position: relative;
+}
+
+.myImage {
+    width: 100%;
+    max-width: 500px; /* Ajustez la largeur selon vos besoins */
+    padding-top: 10px;
+    display: block;
+   
+
+}
+.fade-out {
+    animation: fadeOut 2s ease-in-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+#displayText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top:50px ;
+    display: none; /* Cachez le texte initialement */
+    font-size: 24px; /* Ajustez la taille de la police selon vos besoins */
+}
+.hidden{
+    color: orange;
+}
+.appear {
+    animation: appear 1.5s ease-in-out;
+    display: block !important; /* Assurez-vous que le texte est affiché pendant l'animation */
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(10px); /* Faites apparaître le texte en glissant vers le haut */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#myImage1{
+    margin-left: 450px;
+}
+#myImage2{
+   float:right;
+   margin-right: -30px;
+   margin-top: -310px;
+}
+.hiddenn{
+    color: orange;
+    margin-left: 500px;
+    margin-top: 85px;
+    font-size: 1.6em;
+}
+.appearr {
+    animation: appear 1.5s ease-in-out;
+    display: block !important; /* Assurez-vous que le texte est affiché pendant l'animation */
+}
+
+.hidden2{
+    color: orange;
+    margin-left: 1030px;
+    margin-top: 85px;
+    font-size: 1.6em;
+}
+.appear2 {
+    animation: appear 1.5s ease-in-out;
+    display: block !important; /* Assurez-vous que le texte est affiché pendant l'animation */
+}
+
+#displayText2 {
+   margin-top: -180px;
+}
+/*  VEILLE */
+
+.circle-text {
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border: 5px solid #FFA500; /* Couleur de bordure orange */
+    border-radius: 50%; /* Pour créer un cercle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.letter {
+    font-size: 24px;
+    transform-origin: center;
+    transform: rotate(-40deg);
+    color: orangered;
+}
+
+.circle-text::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(#FFA500, #FF8C00, #FFD700); /* Lumière changeante */
+    border-radius: 50%;
+    position: absolute;
+    animation: changeLight 2s linear infinite; /* Animation de changement de lumière */
+}
+
+@keyframes changeLight {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#text-container{
+    color: orange;
+    width: 40%;
+    text-align: center;
+    margin-left: 600px;
+    font-size: 2em;
+    margin-top: -200px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #001120;
+    text-align: center;
+    margin-top: -60px;
+}
+
+.footer-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 1s;
+}
+footer p{
+    color: orangered;
+}
+
+/* Utilisez un design réactif avec des media queries */
+@media screen and (max-width: 768px) {
+    /* Styles pour les écrans de largeur maximale de 768 pixels */
+    /* Vous pouvez personnaliser ces styles en fonction de vos besoins */
+}
+
+/* Utilisez une unité de base relative (ex : rem) pour la taille de la police et les marges */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Utilisez des polices web standard */
+body {
+    font-family: Arial, sans-serif;
+}
